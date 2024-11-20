@@ -5,8 +5,6 @@ require_relative("print_love")
 require_relative("print_matrix_diagonal")
 require_relative("recursive_finder")
 
-
-
 class Main
     def use_classes(number)
         case number
@@ -40,7 +38,7 @@ class Main
         end 
         return nil
     end
-
 end
+
 main = Main.new()
 p main.use_classes(ARGV[0].to_i)
