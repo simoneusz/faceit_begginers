@@ -26,7 +26,7 @@ class Main
       instance = RecursiveFinder.new
       hash = { key1: {}, key2: {}, key3: { key4: 'str', key5: 'str2', key6: { key7: { key8: 1, key9: [2] } } } }
 
-      instance.last_nested_hash_value(hash)
+      instance.last_nested_hash_value(hash, :key7)
     when 5
       instance = Formatize.new
       instance.formatize('Hello world', :css)
