@@ -1,10 +1,8 @@
 class ClassesCounter
   def get_all(arrays, object_name)
-    result = []
-    arrays.each do |line|
-      line.each { |i| result << i if i.instance_of?(object_name) }
+    arrays.flatten.filter do |i|
+      i.instance_of?(object_name)
     end
-    result
   end
 end
 
